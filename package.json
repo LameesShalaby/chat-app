@@ -1,5 +1,4 @@
 {
-
     "homepage": "https://lameesshalaby.github.io/chat-app/",
     "name": "let-s-chat",
     "private": true,
@@ -7,10 +6,10 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
+        "start": "vite",
+        "predeploy": "vite build",
+        "deploy": "gh-pages -d dist ",
         "build": "vite build",
-        "predeploy": "npm run build",
-        "deploy": "npm run build && gh-pages -d build",
-
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
     },
