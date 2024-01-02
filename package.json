@@ -8,8 +8,9 @@
         "dev": "vite",
         "start": "vite",
         "predeploy": "vite build",
-        "deploy": "gh-pages -d dist ",
-        "build": "vite build",
+        "clean": "rm -rf dist",
+        "build": "npm run clean && vite build",
+        "deploy": "gh-pages -d dist",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
     },
